@@ -153,7 +153,7 @@ class TopsisService
 
         DB::transaction(function () use ($data) {
             // Delete old results to refresh
-            Hasil::truncate();
+            Hasil::query()->delete();
 
             foreach ($data['preference'] as $item) {
                 Hasil::create([
