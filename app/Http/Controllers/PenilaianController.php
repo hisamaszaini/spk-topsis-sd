@@ -44,7 +44,7 @@ class PenilaianController extends Controller {
             ]);
         }
 
-        return redirect()->route('penilaian.index')->with('success', 'Penilaian saved successfully.');
+        return redirect()->route('penilaian.index')->with('success', 'Data Penilaian berhasil disimpan.');
     }
 
     public function edit(Alternatif $alternatif) {

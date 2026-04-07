@@ -99,7 +99,7 @@
                         <select name="id_alternatif" id="id_alternatif" class="form-control" required>
                             <option value="">-- Pilih Siswa --</option>
                             @foreach($alternatifs as $alt)
-                            <option value="{{ $alt->id_alternatif }}">{{ $alt->nama_siswa }} ({{ $alt->nisn }})</option>
+                            <option value="{{ $alt->id_alternatif }}">{{ $alt->nama_siswa }}</option>
                             @endforeach
                         </select>
                     </div>
