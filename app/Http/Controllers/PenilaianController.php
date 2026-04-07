@@ -8,6 +8,7 @@ use App\Models\Penilaian;
 use Illuminate\Http\Request;
 
 class PenilaianController extends Controller {
+
     public function index() {
         $alternatifs = Alternatif::with(['penilaian' => function ($query) {
             $query->join('tabel_kriteria', 'tabel_penilaian.id_kriteria', '=', 'tabel_kriteria.id_kriteria')
@@ -53,9 +54,9 @@ class PenilaianController extends Controller {
     public function destroy($id_alternatif) {
         try {
             Penilaian::where('id_alternatif', $id_alternatif)->delete();
-            return redirect()->route('penilaian.index')->with('success', 'Penilaian deleted successfully.');
         } catch (\Exception $e) {
-            return redirect()->route('penilaian.index')->with('error', 'Terjadi kesalahan saat menghapus data.');
+            return redirect()->route('penilaian.index')->with('error', 'Gagal hapus.');
         }
+        return redirect()->route('penilaian.index')->with('success', 'Berhasil hapus.');
     }
 }

@@ -8,7 +8,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
 
-    <title>SPK Lomba SD (Lite) - Dashboard</title>
+    <title>SPK Lomba SD - Dashboard</title>
 
     <!-- Custom fonts for this template-->
     <link href="{{ asset('vendor/fontawesome-free/css/all.min.css') }}" rel="stylesheet" type="text/css">
@@ -60,7 +60,7 @@
                 <div class="sidebar-brand-icon rotate-n-15">
                     <i class="fas fa-graduation-cap"></i>
                 </div>
-                <div class="sidebar-brand-text mx-3">SPK Lomba SD (Lite)</div>
+                <div class="sidebar-brand-text mx-3">SPK Lomba Siswa SD</div>
             </a>
 
             <!-- Divider -->
@@ -250,7 +250,7 @@
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
-                        <span>Copyright &copy; 2026 SPK Lomba SD (Lite)</span>
+                        <span>Copyright &copy; 2026 SPK TOPSIS Lomba SD</span>
                     </div>
                 </div>
             </footer>

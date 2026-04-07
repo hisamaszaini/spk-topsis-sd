@@ -1,11 +1,11 @@
-# Sistem Rekomendasi Lomba SD (Lite Edition)
+# Sistem Rekomendasi Lomba Siswa SD
 
-Sistem Pendukung Keputusan (SPK) ini merupakan versi **"Lite"** yang dirancang untuk kemudahan penggunaan dalam menentukan rekomendasi lomba bagi siswa Sekolah Dasar. Versi ini menghilangkan fitur Sub-Kriteria untuk mempercepat proses input penilaian secara langsung.
+Sistem Pendukung Keputusan (SPK) ini dirancang untuk kemudahan penggunaan dalam menentukan rekomendasi lomba bagi siswa Sekolah Dasar. Versi ini menggunakan input penilaian secara langsung untuk mempercepat proses evaluasi.
 
-## 🚀 Perbedaan Utama (Lite vs Standard)
+## 🚀 Keunggulan
 
-- **Tanpa Sub-Kriteria**: Anda tidak perlu mendefinisikan skala nilai terlebih dahulu. Nilai (seperti 80, 90, 75) diinputkan langsung saat proses penilaian.
-- **Lebih Cepat**: Mengurangi langkah konfigurasi awal.
+- **Input Langsung**: Anda tidak perlu mendefinisikan sub-kriteria. Nilai (seperti 80, 90, 75) diinputkan langsung saat proses penilaian.
+- **Efisien**: Mengurangi langkah konfigurasi awal yang rumit.
 - **Fleksibel**: Penilai memiliki kebebasan penuh dalam memberikan skor numerik untuk setiap kriteria.
 
 ## 🛠️ Fitur
@@ -21,8 +21,8 @@ Sistem Pendukung Keputusan (SPK) ini merupakan versi **"Lite"** yang dirancang u
 
 1. **Clone Repository**
    ```bash
-   git clone https://github.com/hisamaszaini/spk-sd.git
-   cd spk-sd
+   git clone https://github.com/hisamaszaini/spk-topsis-sd.git
+   cd spk-topsis-sd
    ```
 
 2. **Instalasi**
@@ -44,4 +44,4 @@ Sistem Pendukung Keputusan (SPK) ini merupakan versi **"Lite"** yang dirancang u
    ```
 
 ---
-**SPK SD Lite** © 2026.
+**Sistem Rekomendasi Lomba SD** © 2026.
