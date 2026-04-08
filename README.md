@@ -8,9 +8,8 @@ Sistem Pendukung Keputusan (SPK) ini dirancang untuk memudahkan penentuan rekome
 
 Sebelum menjalankan aplikasi, pastikan komputer Anda sudah terinstal aplikasi berikut:
 1.  **XAMPP** atau **Laragon**: Untuk menjalankan server database (MySQL) dan PHP..
-2.  **Composer**: Alat untuk mendownload pustaka Laravel.
-3.  **Node.js & NPM**: Untuk mengelola tampilan aplikasi.
-4.  **Visual Studio Code (VS Code)**: Aplikasi utama untuk mengedit kode dan menjalankan perintah.
+2.  **Composer**: Alat untuk mendownload pustaka Laravel. [Download Composer](https://getcomposer.org/download/).
+3.  **Visual Studio Code (VS Code)**: Aplikasi utama untuk mengedit kode dan menjalankan perintah. [Download VS Code](https://code.visualstudio.com/).
 
 ---
 
@@ -75,13 +74,6 @@ php artisan key:generate
 Di Terminal VS Code, ketik perintah ini untuk membuat tabel otomatis:
 ```bash
 php artisan migrate --seed
-```
-
-### Langkah 9: Proses Tampilan (Frontend)
-Ketik perintah ini di Terminal VS Code (pastikan internet lancar):
-```bash
-npm install
-npm run build
 ```
 
 ---
