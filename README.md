@@ -7,10 +7,10 @@ Sistem Pendukung Keputusan (SPK) ini dirancang untuk memudahkan penentuan rekome
 ## 🛠️ Persyaratan Utama (Wajib Instal)
 
 Sebelum menjalankan aplikasi, pastikan komputer Anda sudah terinstal aplikasi berikut:
-1.  **XAMPP** atau **Laragon**: Untuk menjalankan server database (MySQL) dan PHP. [Download XAMPP](https://www.apachefriends.org/download.html).
-2.  **Composer**: Alat untuk mendownload pustaka Laravel. [Download Composer](https://getcomposer.org/download/).
-3.  **Node.js & NPM**: Untuk mengelola tampilan aplikasi. [Download Node.js](https://nodejs.org/).
-4.  **Visual Studio Code (VS Code)**: Aplikasi utama untuk mengedit kode dan menjalankan perintah. [Download VS Code](https://code.visualstudio.com/).
+1.  **XAMPP** atau **Laragon**: Untuk menjalankan server database (MySQL) dan PHP..
+2.  **Composer**: Alat untuk mendownload pustaka Laravel.
+3.  **Node.js & NPM**: Untuk mengelola tampilan aplikasi.
+4.  **Visual Studio Code (VS Code)**: Aplikasi utama untuk mengedit kode dan menjalankan perintah.
 
 ---
 
@@ -46,6 +46,17 @@ composer install
 3. Klik kanan file hasil copy (`.env.example copy`), pilih **Rename**, lalu ubah namanya menjadi `.env`.
 4. Klik file `.env` tersebut untuk membukanya di editor.
 5. Cari tulisan `DB_DATABASE=spk_saw`, ubah menjadi `DB_DATABASE=spk_topsis_sd`.
+
+   ```env
+   DB_CONNECTION=mysql
+   DB_HOST=127.0.0.1
+   DB_PORT=3306
+   DB_DATABASE=spk_topsis_sd
+   DB_USERNAME=root
+   DB_PASSWORD=
+   ```
+   *(Kosongkan password jika Anda menggunakan XAMPP/Laragon default)*.
+
 6. Simpan perubahan dengan menekan **Ctrl + S**.
 
 ### Langkah 6: Buat Kunci Aplikasi
@@ -81,11 +92,11 @@ Kapanpun Anda ingin membuka aplikasi, buka project di VS Code lalu jalankan peri
 ```bash
 php artisan serve
 ```
-Lalu buka browser dan buka alamat: `http://127.0.0.1:8000`.
+Aplikasi akan berjalan di alamat: `http://127.0.0.1:8000`. Buka alamat tersebut di browser Anda.
 
 ---
 
-## 🔑 Informasi Login (Akun Masuk)
+## 🔑 Informasi Login
 
 | Peran (Role) | Email | Password |
 | :--- | :--- | :--- |
