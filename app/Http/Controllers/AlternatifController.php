@@ -3,6 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Models\Alternatif;
+use App\Imports\AlternatifImport;
+use Maatwebsite\Excel\Facades\Excel;
 use Illuminate\Http\Request;
 
 class AlternatifController extends Controller
@@ -52,6 +54,20 @@ class AlternatifController extends Controller
             return redirect()->route('alternatif.index')->with('success', 'Data Alternatif berhasil dihapus.');
         } catch (\Illuminate\Database\QueryException $e) {
             return redirect()->route('alternatif.index')->with('error', 'Data tidak dapat dihapus karena sedang digunakan di tabel lain.');
+        }
+    }
+
+    public function import(Request $request)
+    {
+        $request->validate([
+            'file' => 'required|mimes:xlsx,xls,csv|max:2048',
+        ]);
+
+        try {
+            Excel::import(new AlternatifImport, $request->file('file'));
+            return redirect()->route('alternatif.index')->with('success', 'Data Alternatif dan Penilaian berhasil diimport.');
+        } catch (\Exception $e) {
+            return redirect()->route('alternatif.index')->with('error', 'Terjadi kesalahan saat import data: ' . $e->getMessage());
         }
     }
 }

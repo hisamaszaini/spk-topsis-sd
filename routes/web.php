@@ -32,6 +32,7 @@ Route::middleware(['auth'])->group(function () {
     Route::middleware(['role:admin'])->group(function () {
         // CRUD Data Master
         Route::resource('kriteria', KriteriaController::class);
+        Route::post('alternatif/import', [AlternatifController::class, 'import'])->name('alternatif.import');
         Route::resource('alternatif', AlternatifController::class);
         Route::resource('users', UserController::class);
     });
